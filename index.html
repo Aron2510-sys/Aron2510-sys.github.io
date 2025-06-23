@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hábitos Saludables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #0f0;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #333;
+            padding: 10em;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        .titulo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #0f0;
+            text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Graffiti', cursive;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            clear: both;
+        }
+
+.imagenes-alimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen-alimento {
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    text-align: center; /* Agrega esta línea */
+
+}
+
+.imagen-alimento img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    text-align: center; /* Agrega esta línea */
+}
+
+.imagen-alimento .descripcion {
+    padding: 20px;
+    text-align: center; /* Agrega esta línea */
+}
+
+.imagen-alimento .descripcion h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+    text-align: center; /* Agrega esta línea */
+}
+
+.imagen-alimento .descripcion p {
+    text-align: center; /* Agrega esta línea */
+}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* ... resto del código ... */
+  
+  /* Agrega este código */
+  #ejercicio button {
+    background-color: #0f0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 0 10px #0f0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  #ejercicio button:hover {
+    background-color: #00cc00;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+#opiniones form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#opiniones textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+#opiniones input[type="file"] {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+#opiniones button[type="submit"] {
+  background-color: #0f0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 0 0 10px #0f0;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  border-radius: 10px;
+}
+
+#opiniones button[type="submit"]:hover {
+  background-color: #00cc00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+</style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Hábitos Saludables</h1>
+        <nav>
+            <ul>
+                <li><a href="#alimentos">Alimentos</a></li>                             
+                <li><a href="#ejercicio">Ejercicio</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>                            
+            </ul>
+        </nav>
+    </header>
+    <main>
+<section id="alimentos">
+    <h1>Alimentación Saludable</h1>
+    <p>Una alimentación saludable es fundamental para mantener un estilo de vida saludable.</p>
+    <ul>
+        <li>Come frutas y verduras frescas</li>
+        <li>Incluye proteínas magras en tus comidas</li>
+        <li>Evita alimentos procesados y azúcares añadidos</li>
+    </ul>
+    <div class="imagenes-alimentos">
+        <div class="imagen-alimento">
+            <img src="imagenes/manzana.jpg" alt="Manzana">
+            <div class="descripcion">
+                <h2>Manzana</h2>
+                <p>Rica en fibra y antioxidantes</p>
+                <p>Ayuda a prevenir enfermedades cardíacas y diabetes</p>
+            </div>
+        </div>
+        <div class="imagen-alimento">
+            <img src="imagenes/pollo.jpg" alt="Pollo">
+            <div class="descripcion">
+                <h2>Pollo</h2>
+                <p>Excelente fuente de proteínas magras</p>
+                <p>Ayuda a construir y reparar músculos</p>
+            </div>
+        </div>
+        <div class="imagen-alimento">
+            <img src="imagenes/quinoa.webp" alt="Quinoa">
+            <div class="descripcion">
+                <h2>Quinoa</h2>
+                <p>Rica en proteínas y fibra</p>
+                <p>Ayuda a controlar el azúcar en la sangre y a reducir el colesterol</p>
+            </div>
+        </div>
+        <div class="imagen-alimento">
+            <img src="imagenes/salmon.webp" alt="Salmón">
+            <div class="descripcion">
+                <h2>Salmón</h2>
+                <p>Rico en omega-3</p>
+                <p>Ayuda a reducir la inflamación y a mejorar la salud del corazón</p>
+            </div>
+        </div>
+        <div class="imagen-alimento">
+            <img src="imagenes/espinacas.webp" alt="Espinacas">
+            <div class="descripcion">
+                <h2>Espinacas</h2>
+                <p>Ricas en hierro y antioxidantes</p>
+                <p>Ayudan a prevenir la anemia y a mejorar la salud ocular</p>
+            </div>
+        </div>
+    </div>
+</section>    
+<section id="ejercicio">
+  <h1>¿Cuál es tu tipo de cuerpo?</h1>
+  <button type="button" onclick="window.location.href='ectomorfo.html'">Ectomorfo</button>
+  <button type="button" onclick="window.location.href='mesomorfo.html'">Mesomorfo</button>
+  <button type="button" onclick="window.location.href='endomorfo.html'">Endomorfo</button>
+</section>
+<section id="opiniones">
+  <h1>Comparte tu opinión</h1>
+  <p>¿Qué te pareció esta página informativa? Comparte tu opinión con nosotros.</p>
+  <form>
+    <textarea placeholder="Escribe tu opinión aquí..." rows="5" cols="50"></textarea>
+    <input type="file" accept="image/*">
+    <button type="submit">Enviar opinión</button>
+  </form>
+  <script>
+    const form = document.querySelector(form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const opinion = document.querySelector('#opiniones textarea').value;
+      if (opinion.trim() !== '') {
+        console.log('Opinión enviada:', opinion);
+        form.reset();
+        alert('Opinión enviada con éxito');
+      }
+    });
+  </script>
+</section>      
+</body>
+</html>
